@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!------------Header--------->
+    <header>
+        <nav>
+            <div class="container">
+                <form action="">
+                    <input type="text" placeholder="Tìm kiếm...">
+                </form>
+                <ul class="nav-icons">
+                    <i class="fa-solid fa-user"></i>
+                    <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+                </ul>
+            </div>
+        </nav>
+        <nav>
+            <div class="container">
+                <div class="logo">
+                    <a href="index.html"><img src="./imgs/logo.png" alt=""></a>
+                </div>
+                <ul class="navbar">
+                    <li>
+                        <a href="index.html">product</a>
+                    </li>
+                    <li>
+                        <a href="detail.html">detail product</a>
+                    </li>
+                    <li>
+                        <a href="cart.html">your cart</a>
+                    </li>
+                    
+                </ul>
+                <div class="menu-bars">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- hero -->
+
+    <div class="banner">
+        <div class="banner-text">
+            <h3>Your Cart</h3>
+            <p>HOME / <span>Your Shopping Cart</span></p>
+        </div>
+    </div>
+
+    <div class="hero">
+        <div class="heading">
+            <h3>NEW ARRIVALS</h3>
+        </div>
+        <div class="product container">
+            <div class="left">
+                <div class="list-size">
+                    <p class="heading-bar">Brand</p>
+                    <ul class="brandmore">
+                        <li><input type="checkbox" name="brand" value="" id="tag"> <label for="tag">All</label></li>
+                        <li><input type="checkbox" name="brand" value="" id="rox"> <label for="rox">Converse</label>
+                        </li>
+                        <li><input type="checkbox" name="brand" value="" id="brt"> <label for="brt">Vans</label></li>
+                        <li><input type="checkbox" name="brand" value="" id="Tit"> <label for="Tit">K-Swiss</label></li>
+                        <li><input type="checkbox" name="brand" value="" id="Cey"> <label for="Cey">Palladium</label>
+                        </li>
+                        <li><input type="checkbox" name="brand" value="" id="Supra"> <label for="Supra">Supra</label>
+                        </li>
+                    </ul>
+                </div>
+                <!-------- brand -------->
+
+                <div class="">
+                    <p class="heading-bar">Size<i class="fas fa-angle-down iconmore2"></i></p>
+                    <ul class="sizemore">
+                        <li><input type="checkbox" name="size" value="" id="allsize"> <label for="allsize">All</label>
+                        </li>
+                        <li><input type="checkbox" name="size" value="" id="7"> <label for="7">US 7</label></li>
+                        <li><input type="checkbox" name="size" value="" id="75"> <label for="75">US 7.5</label></li>
+                        <li><input type="checkbox" name="size" value="" id="8"> <label for="8">US 8</label></li>
+                        <li><input type="checkbox" name="size" value="" id="85"> <label for="85">US 8.5</label></li>
+                        <li><input type="checkbox" name="size" value="" id="9"> <label for="9">US 9</label></li>
+                        <li><input type="checkbox" name="size" value="" id="95"> <label for="95">US 9.5</label></li>
+                        <li><input type="checkbox" name="size" value="" id="10"> <label for="10">US 10</label></li>
+                        <li><input type="checkbox" name="size" value="" id="105"> <label for="105">US 10.5</label></li>
+                        <li><input type="checkbox" name="size" value="" id="11"> <label for="11">US 11</label></li>
+                        <li><input type="checkbox" name="size" value="" id="115"> <label for="115">US 11.5</label></li>
+                        <li><input type="checkbox" name="size" value="" id="12"> <label for="12">US 12</label></li>
+                    </ul>
+                </div>
+                <!------ CASE SIZE --------->
+
+                <div class="">
+                    <p class="heading-bar">Price<i class="fas fa-angle-down iconmore3"></i></p>
+                    <ul class="strapmore">
+                        <li><input type="checkbox" name="strap" value="" id="Fac"> <label for="Fac">All</label></li>
+                        <li><input type="checkbox" name="strap" value="" id="Ler"> <label for="Ler">Under
+                                1.000.000vnd</label></li>
+                        <li><input type="checkbox" name="strap" value="" id="Pote"> <label
+                                for="Pote">1.000.000vnd-3.000.000vnd</label></li>
+                        <li><input type="checkbox" name="strap" value="" id="Rur"> <label
+                                for="Rur">3.000.000vnd-5.000.000vnd</label></li>
+                        <li><input type="checkbox" name="strap" value="" id="Sts"> <label
+                                for="Sts">5.000.000vnd-7.000.000vnd</label></li>
+                        <li><input type="checkbox" name="strap" value="" id="over"> <label for="over">Over
+                                7.000.000vnd</label></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right">
+                <h3>NEW BRAND</h3>
+                <div class="product-list">
+                    <!-- product item -->
+                    <div class="product-item">
+                        <img src="./imgs/1.jpg" alt="">
+                        <div class="product-info">
+                            <h4>Converse Chuck Taylor All Star Keith Haring</h4>
+                            <p>#170804C</p>
+                            <p class="price">1.900.000VND</p>
+                        </div>
+                        <div class="product-btn">
+                            <a href="#" class="btn btn-add">Add to cart</a>
+                            <a href="#" class="btn btn-shopnow">Shop now</a>
+                        </div>
+                    </div>
+                    <!-- product item -->
+                    <div class="product-item">
+                        <img src="./imgs/2.jpg" alt="">
+                        <div class="product-info">
+                            <h4>Converse Chuck Taylor All Star Keith Haring</h4>
+                            <p>#170804C</p>
+                            <p class="price">1.900.000VND</p>
+                        </div>
+                        <div class="product-btn">
+                            <a href="#" class="btn btn-add">Add to cart</a>
+                            <a href="#" class="btn btn-shopnow">Shop now</a>
+                        </div>
+                    </div>
+                    <!-- product item -->
+                    <div class="product-item">
+                        <img src="./imgs/3.jpg" alt="">
+                        <div class="product-info">
+                            <h4>Converse Chuck Taylor All Star Keith Haring</h4>
+                            <p>#170804C</p>
+                            <p class="price">1.900.000VND</p>
+                        </div>
+                        <div class="product-btn">
+                            <a href="#" class="btn btn-add">Add to cart</a>
+                            <a href="#" class="btn btn-shopnow">Shop now</a>
+                        </div>
+                    </div>
+                    <!-- product item -->
+                    <div class="product-item">
+                        <img src="./imgs/4.jpg" alt="">
+                        <div class="product-info">
+                            <h4>Converse Chuck Taylor All Star Keith Haring</h4>
+                            <p>#170804C</p>
+                            <p class="price">1.900.000VND</p>
+                        </div>
+                        <div class="product-btn">
+                            <a href="#" class="btn btn-add">Add to cart</a>
+                            <a href="#" class="btn btn-shopnow">Shop now</a>
+                        </div>
+                    </div>
+                    <!-- product item -->
+                    <div class="product-item">
+                        <img src="./imgs/5.jpg" alt="">
+                        <div class="product-info">
+                            <h4>Converse Chuck Taylor All Star Keith Haring</h4>
+                            <p>#170804C</p>
+                            <p class="price">1.900.000VND</p>
+                        </div>
+                        <div class="product-btn">
+                            <a href="#" class="btn btn-add">Add to cart</a>
+                            <a href="#" class="btn btn-shopnow">Shop now</a>
+                        </div>
+                    </div>
+                    <!-- product item -->
+                    <div class="product-item">
+                        <img src="./imgs/6.jpg" alt="">
+                        <div class="product-info">
+                            <h4>Converse Chuck Taylor All Star Keith Haring</h4>
+                            <p>#170804C</p>
+                            <p class="price">1.900.000VND</p>
+                        </div>
+                        <div class="product-btn">
+                            <a href="#" class="btn btn-add">Add to cart</a>
+                            <a href="#" class="btn btn-shopnow">Shop now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="new-brand container">
+            <div class="heading">
+                <hr>
+                <h3>NEW BRAND</h3>
+            </div>
+            <div class="wrapper-brand">
+                <div class="brand-carousel owl-carousel">
+                    <!-- product item -->
+                    <div class="product-item">
+                        <img src="./imgs/6.jpg" alt="">
+                        <div class="product-info">
+                            <h4>Converse Chuck Taylor All Star Keith Haring</h4>
+                            <p>#170804C</p>
+                            <p class="price">1.900.000VND</p>
+                        </div>
+                        <div class="product-btn">
+                            <a href="#" class="btn btn-add">Add to cart</a>
+                            <a href="#" class="btn btn-shopnow">Shop now</a>
+                        </div>
+                    </div>
+                    <!-- product item -->
+                    <div class="product-item">
+                        <img src="./imgs/5.jpg" alt="">
+                        <div class="product-info">
+                            <h4>Converse Chuck Taylor All Star Keith Haring</h4>
+                            <p>#170804C</p>
+                            <p class="price">1.900.000VND</p>
+                        </div>
+                        <div class="product-btn">
+                            <a href="#" class="btn btn-add">Add to cart</a>
+                            <a href="#" class="btn btn-shopnow">Shop now</a>
+                        </div>
+                    </div>
+                    <!-- product item -->
+                    <div class="product-item">
+                        <img src="./imgs/4.jpg" alt="">
+                        <div class="product-info">
+                            <h4>Converse Chuck Taylor All Star Keith Haring</h4>
+                            <p>#170804C</p>
+                            <p class="price">1.900.000VND</p>
+                        </div>
+                        <div class="product-btn">
+                            <a href="#" class="btn btn-add">Add to cart</a>
+                            <a href="#" class="btn btn-shopnow">Shop now</a>
+                        </div>
+                    </div>
+                    <!-- product item -->
+                    <div class="product-item">
+                        <img src="./imgs/3.jpg" alt="">
+                        <div class="product-info">
+                            <h4>Converse Chuck Taylor All Star Keith Haring</h4>
+                            <p>#170804C</p>
+                            <p class="price">1.900.000VND</p>
+                        </div>
+                        <div class="product-btn">
+                            <a href="#" class="btn btn-add">Add to cart</a>
+                            <a href="#" class="btn btn-shopnow">Shop now</a>
+                        </div>
+                    </div>
+                    <!-- product item -->
+                    <div class="product-item">
+                        <img src="./imgs/2.jpg" alt="">
+                        <div class="product-info">
+                            <h4>Converse Chuck Taylor All Star Keith Haring</h4>
+                            <p>#170804C</p>
+                            <p class="price">1.900.000VND</p>
+                        </div>
+                        <div class="product-btn">
+                            <a href="#" class="btn btn-add">Add to cart</a>
+                            <a href="#" class="btn btn-shopnow">Shop now</a>
+                        </div>
+                    </div>
+                    <!-- product item -->
+                    <div class="product-item">
+                        <img src="./imgs/1.jpg" alt="">
+                        <div class="product-info">
+                            <h4>Converse Chuck Taylor All Star Keith Haring</h4>
+                            <p>#170804C</p>
+                            <p class="price">1.900.000VND</p>
+                        </div>
+                        <div class="product-btn">
+                            <a href="#" class="btn btn-add">Add to cart</a>
+                            <a href="#" class="btn btn-shopnow">Shop now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- footer -->
+    <footer>
+        <div class="footer container">
+            <div class="col">
+                <img src="./imgs/logo_footer.png" alt="">
+                <p>Add: No1 Nguyen Hue, Districts 1, HCM city</p>
+                <p>Phone: 19000000</p>
+                <p>Email: thefactory@gmail.com</p>
+            </div>
+            <div class="col">
+                <h5>information</h5>
+                <div>
+                    <p>about us</p>
+                    <p>promotion</p>
+                    <p>blog</p>
+                </div>
+            </div>
+            <div class="col">
+                <h5>support</h5>
+                <div>
+                    <p>contact</p>
+                    <p>faq</p>
+                    <p>payment</p>
+                </div>
+            </div>
+            <div class="col">
+                <h5>you can find us</h5>
+                <div class="footer-icon">
+                    <p><i class="fa-brands fa-twitter"></i></p>
+                    <p><i class="fa-brands fa-linkedin"></i></p>
+                    <p><i class="fa-brands fa-instagram"></i></p>
+                </div>
+                <form action="">
+                    <h5>contect with us</h5>
+                    <input name="email" type="text" placeholder="you email">
+                    <label for="email"><i class="fa fas-search"></i></label>
+                </form>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright2020 &#169; Footwear Factory</p>
+            <p>
+                
+            </p>
+        </div>
+    </footer>
+</body>
+<script>
+    $('.brand-carousel').owlCarousel({
+        loop: true,
+        margin: 10,
+        autoplay:true,
+        autoplayTimeOut:2000,
+        responsive: {
+            0:{
+                items:1
+            },
+            600: {
+                items: 2,
+                nav:false
+            },
+            767: {
+                items: 3,
+                nav:false
+            },
+            1000: {
+                items: 4,
+                nav:false
+            }
+        }
+    })
+</script>
+<script src="./main.js"></script>
+
+</html>

@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Quicksand:wght@300;400;500&display=swap');
+*{
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 10px 30px;
+}
+
+:root{
+    --main-color: #fbcc0a;
+    --dark-color: #020202;
+}   
+
+.menu-bars{
+    font-size: 30px;
+    display: none;
+}
+
+nav{
+    background-color: var(--dark-color);
+}
+
+nav:nth-child(2){
+    background-color: var(--main-color);
+}
+
+nav:nth-child(2) ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav:nth-child(2) ul li{
+    margin: 0 5px;
+    list-style-type: none;
+}
+
+nav:nth-child(2) ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--dark-color);
+    font-weight: 700;
+}
+
+.logo a img{
+    max-width: 200px;
+}
+
+nav div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+}
+
+.nav-icons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0;
+    
+}
+
+.nav-icons i{
+    color: #fff;
+    display: block;
+    font-size: 22px;
+    margin: 0 3px;
+}
+
+
+
+/* banner */
+.banner{
+    height:50vh;
+    background-image: url('./imgs/jaizer-capangpangan-Z8K5AiK7s04-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: .5;
+    position: relative;
+}
+
+.banner .banner-text{
+    position: absolute;
+    top: 50%;left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: #fff;
+    z-index: 1000;
+}
+
+.banner-text h3{
+    font-weight: 900;
+}
+
+.heading{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 30px;
+}
+
+/* left */
+
+.product{
+    display: flex;
+
+}
+
+.left{
+    flex-basis: 20%;
+}
+
+.left ul li{
+    list-style: none;
+    margin: 5px 0;
+}
+.heading-bar{
+    font-size: 30px;
+    border-bottom: 1px solid var(--dark-color);
+    padding-bottom: 10px;
+}
+
+/* right */
+.right{
+    margin-left: 20px;
+    flex: 1;
+}
+
+.product-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product-item{
+    padding: 10px;
+    max-width: 310px;
+    flex-basis: 100%;
+}
+
+.product-item img{
+    width: 100%;
+}
+
+.product-info .price{
+    font-weight: 700;
+}
+
+.btn{
+    display: block;
+    border: none;
+    padding: 5px 8px;
+    text-decoration: none;
+}
+
+.product-item .product-btn{
+    display: flex;
+    margin-top: 20px;
+}
+
+.product-item .btn-add{
+    background-color: var(--main-color);
+    color: var(--dark-color);
+}
+
+.product-item .btn-shopnow{
+    background-color: var(--dark-color);
+    color: #fff;
+}
+
+
+/* brand */
+.wrapper-brand{
+    width: 100%;
+}
+
+.brand-carousel{
+    padding: 8px 10px;
+}
+
+
+.owl-dots{
+    text-align: center;
+}
+
+
+.owl-dot{
+    height: 8px;width: 8px;
+    background-color: var(--dark-color) !important;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+
+
+
+
+
+
+
+/* footer */
+
+footer{
+    background-color: var(--dark-color);
+    padding: 20px 0;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.col h5{
+    color: var(--main-color);
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.col  p{
+    color: #fff;
+    text-transform: capitalize;
+}
+
+.copyright{
+    text-align: center;
+    color: var(--main-color);
+}
+
+.footer-icon{
+    display: flex;
+}
+
+.footer-icon p{
+    margin: 0 8px;
+}
+
+.footer-icon p i{
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+@media (max-width:991px) {
+    .product-list{
+        justify-content: space-around;
+    }
+    .product-item{
+        padding: 10px;
+        max-width: 260px;
+    }
+}
+
+@media (max-width:767px){
+    .left{
+        display: none;
+    }
+    .menu-bars{
+        display: block;
+    }
+    .navbar{
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        background-color: var(--dark-color);
+        position: relative;
+        left: 0;right: 0;
+        transition: all .1s linear;
+    }
+
+    .navbar.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    .navbar{
+        position: absolute;
+        top: 0;
+    }
+
+    nav:nth-child(2) ul{
+        flex-direction: column;
+    }
+    nav:nth-child(2) ul li a{
+        color: #fff;
+    }
+
+    .product-list{
+        justify-content: space-around;
+    }
+    .product-item{
+        padding: 10px;
+        max-width: 200px;
+    }
+
+   
+
+
+}

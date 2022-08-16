@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Quicksand:wght@300;400;500&display=swap');
+*{
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+
+:root{
+    --main-color: #fbcc0a;
+    --dark-color: #020202;
+}   
+
+.menu-bars{
+    font-size: 30px;
+    display: none;
+}
+
+nav{
+    background-color: var(--dark-color);
+}
+
+nav:nth-child(2){
+    background-color: var(--main-color);
+}
+
+nav:nth-child(2) ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav:nth-child(2) ul li{
+    margin: 0 5px;
+    list-style-type: none;
+}
+
+nav:nth-child(2) ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--dark-color);
+    font-weight: 700;
+}
+
+.logo a img{
+    max-width: 200px;
+}
+
+nav div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+}
+
+.nav-icons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0;
+    
+}
+
+.nav-icons i{
+    color: #fff;
+    display: block;
+    font-size: 22px;
+    margin: 0 3px;
+}
+ /* hero contnet*/
+ .heading{
+    margin-top: 20px;
+ }
+.content{
+    display: flex;
+    margin-top: 20px;
+}
+
+.content-carousel{
+    flex-basis: 40%;
+}
+
+.content-carousel img{
+    width: 100%;
+}
+
+.content-des{
+    margin-left: 15px;
+    flex: 1;
+}
+
+.content-des .rating i{
+    color: var(--main-color);
+}
+
+.wrapper-size .size-btns{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.wrapper-size .size-btns button{
+    width: 30px;height: 30px;
+    border: none;
+    outline: none;
+    border: 1px solid rgb(104, 104, 21);
+    background-color: transparent;
+    margin: 0 5px;
+}
+
+
+
+
+
+
+
+ .product-item{
+    padding: 10px;
+    max-width: 310px;
+}
+
+.product-item img{
+    width: 100%;
+}
+
+.product-info .price{
+    font-weight: 700;
+}
+
+.btn{
+    display: block;
+    border: none;
+    padding: 5px 8px;
+    text-decoration: none;
+}
+
+.add-btns{
+    display: flex;
+    margin-top: 20px;
+}
+
+.btn-add{
+    background-color: var(--main-color);
+    color: var(--dark-color);
+    text-transform: capitalize;
+}
+
+.btn-shopnow{
+    background-color: var(--dark-color);
+    color: #fff;
+    text-transform: capitalize;
+} 
+
+/* wrapper flex */
+.wrapper-flex{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.wrapper-flex .box{
+    border: 2px solid var(--main-color);
+    flex: 1;
+    text-align: center;
+    padding: 15px 20px;
+}
+
+.wrapper-flex .box h4{
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+.p-des{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.p-des img{
+    margin: 15px 0;
+    width: 80%;
+}
+
+/* also-like carousel */
+.aslo-carousel{
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+/* footer */
+
+footer{
+    background-color: var(--dark-color);
+    padding: 20px 0;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.col h5{
+    color: var(--main-color);
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.col  p{
+    color: #fff;
+    text-transform: capitalize;
+}
+
+.copyright{
+    text-align: center;
+    color: var(--main-color);
+}
+
+.footer-icon{
+    display: flex;
+}
+
+.footer-icon p{
+    margin: 0 8px;
+}
+
+.footer-icon p i{
+    font-size: 20px;
+}
+
+@media (max-width:991px){
+
+}
+
+
+
+@media (max-width:767px){
+    .menu-bars{
+        display: block;
+    }
+    .navbar{
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        background-color: var(--dark-color);
+        position: relative;
+        left: 0;right: 0;
+        transition: all .1s linear;
+    }
+
+    .navbar.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+
+    .navbar{
+        position: absolute;
+        top: 0;
+    }
+
+    nav:nth-child(2) ul{
+        flex-direction: column;
+    }
+    nav:nth-child(2) ul li a{
+        color: #fff;
+    }
+}

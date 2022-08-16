@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Quicksand:wght@300;400;500&display=swap');
+*{
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+:root{
+    --main-color: #fbcc0a;
+    --dark-color: #020202;
+}   
+
+.menu-bars{
+    font-size: 30px;
+    display: none;
+}
+
+nav{
+    background-color: var(--dark-color);
+}
+
+nav:nth-child(2){
+    background-color: var(--main-color);
+}
+
+nav:nth-child(2) ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav:nth-child(2) ul li{
+    margin: 0 5px;
+    list-style-type: none;
+}
+
+nav:nth-child(2) ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--dark-color);
+    font-weight: 700;
+}
+
+.logo a img{
+    max-width: 200px;
+}
+
+nav div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+}
+
+.nav-icons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0;
+    
+}
+
+.nav-icons i{
+    color: #fff;
+    display: block;
+    font-size: 22px;
+    margin: 0 3px;
+}
+
+
+/* banner */
+.banner{
+    height:50vh;
+    background-image: url('./imgs/jaizer-capangpangan-Z8K5AiK7s04-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: .5;
+    position: relative;
+}
+
+.banner .banner-text{
+    position: absolute;
+    top: 50%;left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: #fff;
+    z-index: 1000;
+}
+
+.banner-text h3{
+    font-weight: 900;
+}
+
+/* hero */
+
+.hero{
+    margin-top: 20px;
+    font-weight: 500;
+}
+
+.heading{
+    text-align: center;
+}
+
+.item{
+    margin-top: 30px;
+}
+
+.item-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.item-top .des{
+    flex: 1;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.item-top .des h3{
+    font-weight: 800;
+}
+
+.item-top .des p{
+    opacity: .5;
+}
+
+.item-top .quan-btn{
+    display: flex;
+    justify-content: center;
+}
+
+.item-top .quan-btn button{
+    width: 30px;
+    height: 30px;
+    border: none;
+    border: 1px solid var(--dark-color);
+    margin-top: 10px;
+    text-align: center;
+}
+
+.item-bot{
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.item-bot .action{
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 60%;
+}
+
+.item-bot .action h5{
+    font-size: 15px;
+}
+
+.item-bot .action h5 span i{
+    color: var(--main-color);
+    margin-right: 5px;
+    font-size: 20px;
+}
+
+.item-img img{
+    max-width: 300px;
+    border: 1px solid var(--dark-color);
+}
+
+.item-bot .price p{
+    font-weight: 800;
+}
+
+
+/* footer */
+
+footer{
+    background-color: var(--dark-color);
+    padding: 20px 0;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.col h5{
+    color: var(--main-color);
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.col  p{
+    color: #fff;
+    text-transform: capitalize;
+}
+
+.copyright{
+    text-align: center;
+    color: var(--main-color);
+}
+
+.footer-icon{
+    display: flex;
+}
+
+.footer-icon p{
+    margin: 0 8px;
+}
+
+.footer-icon p i{
+    font-size: 20px;
+}
+
+
+@media (max-width:991px){
+    .item-top .des h3{
+        font-size: 18px;
+    }  
+}
+
+
+@media (max-width:767px){
+    .menu-bars{
+        display: block;
+    }
+    .navbar{
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        background-color: var(--dark-color);
+        position: relative;
+        left: 0;right: 0;
+        transition: all .1s linear;
+    }
+
+    .navbar.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    .item-bot{
+        position: relative;
+    }
+
+    .navbar{
+        position: absolute;
+        top: 0;
+    }
+
+    nav:nth-child(2) ul{
+        flex-direction: column;
+    }
+    nav:nth-child(2) ul li a{
+        color: #fff;
+    }
+
+    .item-top img{
+        max-width: 230px;
+    }
+
+
+}
+
